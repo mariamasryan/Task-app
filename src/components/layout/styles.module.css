@@ -1,0 +1,43 @@
+.parent{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #1c1d21;
+}
+.navigation{
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  background-color: #1c1d21;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  color: #72737c;
+  font-size: 20px;
+  border-bottom: #72737c 1px solid;
+}
+
+.newList{
+  cursor: pointer;
+}
+
+.content {
+  background-color: #1c1d21;
+  padding: 90px 25px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 20px
+}

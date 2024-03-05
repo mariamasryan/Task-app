@@ -1,0 +1,142 @@
+.container {
+  background-color: #25262c;
+  border-radius: 4px;
+  padding: 6px 10px;
+  transition: 0.3s;
+  margin: 10px;
+  z-index: 1;
+  position: relative;
+  height: 100px;
+  display: flex;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #3d3d3d;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textInputWrapper {
+  width: 100%;
+  text-align: left;
+}
+
+.checkbox input {
+  width: 15px;
+  height: 15px;
+}
+
+.titleText {
+  color: #72737c;
+}
+
+.actionsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconWrapper {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 2.5px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.textInput {
+  padding: 0px 20px 30px 10px;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  color: #cccccc;
+  font-size: 19px;
+}
+
+.activeTextInput {
+  background-color: #3d3d3d;
+}
+
+/* .textInput {
+
+} */
+.todoText {
+  color: #cccccc;
+}
+
+.loadingWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 38, 44, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.spinner {
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  animation-name: spinner;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.container:hover {
+  filter: drop-shadow(6px 8px 4px rgba(0, 0, 0, 0.25));
+}
+
+.iconWrapper:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.completed {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  border-top: 1px solid grey;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+
+.completedTasks {
+  display: flex;
+}
+
+.task{
+  margin-left: 20px;
+}

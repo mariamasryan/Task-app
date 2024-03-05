@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "SpecialElite";
+	src: url("../../assets/fonts/SpecialElite-Regular.ttf");
+}
+
+.styles.wrapper{
+	background-color: #25262c;
+	width: 100%;
+	height: 100%;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	background-color: #25262c;
+	position: relative;
+	min-height: 100vh;
+}
+.titleWrapper {
+	margin-top: 25px;
+	width: 100%;
+	position: relative;
+}
+.titleText {
+	color: #cccccc;
+	text-align: center;
+	font-family: SpecialElite;
+}
+.toggleWrapper {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.toggleBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	width: 125px;
+	color: #ffffff;
+	font-family: SpecialElite;
+	border: 1px solid #cccccc;
+	background-color: transparent;
+	margin: 5px;
+}
+.toggleBtn:hover {
+	cursor: pointer;
+	background-color: rgba(204, 204, 204,0.5);
+}
+.footerWrapper {
+	display: flex;
+	flex: 0.1;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-top: 1px solid #7f8294;
+}
+.footerText{
+	color: #cccccc;
+}
+.activeBtn{
+	background-color: rgba(204, 204, 204,0.5);
+}
